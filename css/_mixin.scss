@@ -12,3 +12,13 @@
   margin: 0 auto;
   @include flexbox($flexJC: space-between);
 }
+
+//
+//
+// responsive
+
+@mixin pc {
+  @media screen and (min-width: #{$pc}) {
+    @content;
+  }
+}
