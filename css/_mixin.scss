@@ -1,0 +1,14 @@
+@mixin flexbox($flexW: nowrap, $flexJC: center, $flexAI: center) {
+  display: flex;
+  justify-content: $flexJC;
+  flex-wrap: $flexW;
+  align-items: $flexAI;
+}
+
+@mixin nav {
+  max-width: 1000px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  @include flexbox($flexJC: space-between);
+}

@@ -1,0 +1,36 @@
+@import "_reset.scss";
+@import "_variable.scss";
+@import "_mixin.scss";
+
+header {
+  .global-nav {
+    height: 44px;
+    border: 1px solid red;
+
+    .global-nav-links {
+      @include nav;
+    }
+  }
+
+  .local-nav {
+    height: 52px;
+    border-bottom: 1px solid #ddd;
+
+    .local-nav-inner {
+      @include nav;
+
+      h1 {
+        margin-right: auto;
+        font-size: 1.2em;
+      }
+
+      .local-nav-links {
+        @include flexbox();
+
+        li:not(:last-child) {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+}
