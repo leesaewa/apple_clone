@@ -52,6 +52,18 @@
         i
       ].objs.container.style.height = `${sceneInfo[i].scrollHeight}px`;
     }
+
+    yOffset = window.pageYOffset;
+    let totalScrollHeight = 0;
+    for (let i = 0; sceneInfo.length; i++) {
+      totalScrollHeight += sceneInfo[i].scrollHeight;
+      if (totalScrollHeight >= yOffset) {
+        currentScene = i;
+        break;
+      }
+    }
+
+    document.body.setAttribute("id", `show-scene-${currentScene}`); //body에 id 넣기
   }
 
   function scrollLoop() {
@@ -63,21 +75,21 @@
 
     if (yOffset > prevScrollHight + sceneInfo[currentScene].scrollHeight) {
       currentScene++;
+      document.body.setAttribute("id", `show-scene-${currentScene}`); //body에 id 넣기
     }
 
     if (yOffset < prevScrollHight) {
-      if (currentScene === 0) return;
+      if (currentScene === 0) return; //브라우저 바운스 효과로 인해 마이너스가 되는 것을 방지(모바일)
       currentScene--;
+      document.body.setAttribute("id", `show-scene-${currentScene}`); //body에 id 넣기
     }
-
-    console.log(currentScene);
   }
 
-  window.addEventListener("resize", setLayout);
   window.addEventListener("scroll", () => {
     yOffset = window.pageYOffset;
     scrollLoop();
   });
-
-  setLayout();
+  window.addEventListener("load", setLayout);
+  // DOMContentLoaded는 dom객체만 로드 끝나면 실행함. load는 이미지파일까지 로드 끝나면 실행
+  window.addEventListener("resize", setLayout);
 })();
