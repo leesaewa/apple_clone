@@ -2,10 +2,11 @@
 
 ## 220820
 
-- scroll height setting
+- js: scroll height setting
+- js: scroll animation
 
 ## 220818
 
 - project start
-- header styling
-- html contents&styling
+- css, html: header styling
+- css, html: html contents&styling

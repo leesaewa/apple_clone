@@ -74,13 +74,13 @@ header {
     @include flexbox();
     height: 3em;
     font-size: 2.5rem;
+    opacity: 0;
 
-    &.sticky-elem {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
+    &.a,
+    &.b,
+    &.c,
+    &.d {
+      top: 35vh;
     }
 
     p {
@@ -97,6 +97,13 @@ header {
     }
   }
 
+  .sticky-elem {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+
   &#scrollsection-2 {
     .main-message {
       font-size: 3.5rem;
@@ -104,6 +111,16 @@ header {
       p {
         font-size: 3.5rem;
       }
+    }
+
+    .b {
+      top: 10%;
+      left: 40%;
+    }
+
+    .c {
+      top: 15%;
+      left: 45%;
     }
   }
 
@@ -215,6 +232,15 @@ footer {
         p {
           font-size: 6vw;
         }
+      }
+
+      .b {
+        top: 20%;
+        left: 53%;
+      }
+
+      .c {
+        left: 55%;
       }
     }
 

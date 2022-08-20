@@ -259,14 +259,11 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
           align-items: center;
   height: 3em;
   font-size: 2.5rem;
+  opacity: 0;
 }
 
-.scroll-section .main-message.sticky-elem {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.scroll-section .main-message.a, .scroll-section .main-message.b, .scroll-section .main-message.c, .scroll-section .main-message.d {
+  top: 35vh;
 }
 
 .scroll-section .main-message p {
@@ -282,12 +279,29 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
   margin-bottom: 0.5em;
 }
 
+.scroll-section .sticky-elem {
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+
 .scroll-section#scrollsection-2 .main-message {
   font-size: 3.5rem;
 }
 
 .scroll-section#scrollsection-2 .main-message p {
   font-size: 3.5rem;
+}
+
+.scroll-section#scrollsection-2 .b {
+  top: 10%;
+  left: 40%;
+}
+
+.scroll-section#scrollsection-2 .c {
+  top: 15%;
+  left: 45%;
 }
 
 .scroll-section .desc-message {
@@ -388,6 +402,13 @@ footer {
   }
   .scroll-section#scrollsection-2 .main-message p {
     font-size: 6vw;
+  }
+  .scroll-section#scrollsection-2 .b {
+    top: 20%;
+    left: 53%;
+  }
+  .scroll-section#scrollsection-2 .c {
+    left: 55%;
   }
   .scroll-section .mid-message {
     font-size: 4vw;
