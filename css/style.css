@@ -246,6 +246,14 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
   font-size: 2.5rem;
 }
 
+.scroll-section .main-message.sticky-elem {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .scroll-section .main-message p {
   font-size: 2rem;
   text-align: center;
@@ -312,6 +320,25 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
   padding: 0 1rem;
   color: #888;
   font-size: 1.2rem;
+}
+
+#show-scene-0 #scrollsection-0 .sticky-elem,
+#show-scene-0 #scrollsection-1 .sticky-elem,
+#show-scene-0 #scrollsection-2 .sticky-elem,
+#show-scene-0 #scrollsection-3 .sticky-elem,
+#show-scene-1 #scrollsection-0 .sticky-elem,
+#show-scene-1 #scrollsection-1 .sticky-elem,
+#show-scene-1 #scrollsection-2 .sticky-elem,
+#show-scene-1 #scrollsection-3 .sticky-elem,
+#show-scene-2 #scrollsection-0 .sticky-elem,
+#show-scene-2 #scrollsection-1 .sticky-elem,
+#show-scene-2 #scrollsection-2 .sticky-elem,
+#show-scene-2 #scrollsection-3 .sticky-elem,
+#show-scene-3 #scrollsection-0 .sticky-elem,
+#show-scene-3 #scrollsection-1 .sticky-elem,
+#show-scene-3 #scrollsection-2 .sticky-elem,
+#show-scene-3 #scrollsection-3 .sticky-elem {
+  display: block;
 }
 
 footer {

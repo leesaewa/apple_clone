@@ -55,6 +55,14 @@ header {
     height: 3em;
     font-size: 2.5rem;
 
+    &.sticky-elem {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+
     p {
       font-size: 2rem;
       text-align: center;
@@ -126,6 +134,25 @@ header {
     font-size: 1.2rem;
   }
 }
+
+#show-scene-0,
+#show-scene-1,
+#show-scene-2,
+#show-scene-3 {
+  #scrollsection-0,
+  #scrollsection-1,
+  #scrollsection-2,
+  #scrollsection-3 {
+    .sticky-elem {
+      display: block;
+    }
+  }
+}
+
+//
+//
+// footer
+//
 
 footer {
   @include flexbox();
