@@ -2,8 +2,23 @@
 @import "_reset.scss";
 @import "_mixin.scss";
 
+//
+//
+// common
+//
+* {
+  box-sizing: border-box;
+}
+
+//
+//
+// header
+//
+
 header {
   .global-nav {
+    @include nav2;
+    top: 0;
     padding: 0 1rem;
     height: 44px;
 
@@ -13,6 +28,8 @@ header {
   }
 
   .local-nav {
+    @include nav2;
+    top: 45px;
     padding: 0 1rem;
     height: 52px;
     border-bottom: 1px solid #ddd;
@@ -41,7 +58,10 @@ header {
 //
 
 .scroll-section {
+  position: relative;
   padding-top: 50vh;
+
+  border: 1px solid red;
 
   &#scrollsection-0 {
     h2 {

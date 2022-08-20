@@ -12,6 +12,11 @@
   margin: 0 auto;
   @include flexbox($flexJC: space-between);
 }
+@mixin nav2 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
 
 //
 //
