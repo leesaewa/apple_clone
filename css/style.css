@@ -322,6 +322,7 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
 .scroll-section .desc-message {
   width: 50%;
   font-weight: bold;
+  opacity: 0;
 }
 
 .scroll-section .desc-message .pin {
