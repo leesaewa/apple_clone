@@ -4,6 +4,7 @@
 
 - js: scroll video img
 - js: canvas draw animation
+- js: image blend
 
 ## 220820
 

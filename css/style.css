@@ -381,6 +381,10 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
   background: blue;
 }
 
+.scroll-section#scrollsection-3 .image-blend-canvas.sticky {
+  position: fixed;
+}
+
 .scroll-section#scrollsection-3 .canvas-caption {
   max-width: 1000px;
   margin: 0 auto;

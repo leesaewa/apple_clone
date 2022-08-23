@@ -182,6 +182,10 @@ header {
 
     .image-blend-canvas {
       background: blue;
+
+      &.sticky {
+        position: fixed;
+      }
     }
 
     .canvas-caption {
