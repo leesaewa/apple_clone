@@ -1,5 +1,9 @@
 # apple clone
 
+## 220823
+
+- js: scroll video img
+
 ## 220820
 
 - js: scroll height setting
