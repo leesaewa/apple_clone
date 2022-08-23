@@ -3,6 +3,7 @@
 ## 220823
 
 - js: scroll video img
+- js: canvas draw animation
 
 ## 220820
 

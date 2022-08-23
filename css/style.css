@@ -349,7 +349,7 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
 .scroll-section .mid-message {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1rem 2em;
   font-size: 2rem;
   color: #888;
 }
@@ -359,7 +359,29 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
   color: #333;
 }
 
-.scroll-section .canvas-caption {
+.scroll-section#scrollsection-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.scroll-section#scrollsection-3 .image-blend-canvas {
+  background: blue;
+}
+
+.scroll-section#scrollsection-3 .canvas-caption {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;

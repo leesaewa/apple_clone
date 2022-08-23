@@ -166,7 +166,7 @@ header {
   .mid-message {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 1rem 2em;
     font-size: 2rem;
     color: $grey;
 
@@ -176,12 +176,21 @@ header {
     }
   }
 
-  .canvas-caption {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    color: $grey;
-    font-size: 1.2rem;
+  &#scrollsection-3 {
+    @include flexbox($flexJC: initial);
+    flex-direction: column;
+
+    .image-blend-canvas {
+      background: blue;
+    }
+
+    .canvas-caption {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      color: $grey;
+      font-size: 1.2rem;
+    }
   }
 }
 
