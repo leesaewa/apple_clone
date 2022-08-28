@@ -1,10 +1,14 @@
 # apple clone
 
+## 220828
+
+- js: text animation, css수정
+
 ## 220823
 
 - js: scroll video img
 - js: canvas draw animation
-- js: image blend
+- js: image blend animation
 
 ## 220820
 

@@ -347,7 +347,7 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
 }
 
 .scroll-section .mid-message {
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   padding: 0 1rem 2em;
   font-size: 2rem;
@@ -387,7 +387,7 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
 
 .scroll-section#scrollsection-3 .canvas-caption {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: -8em auto 0;
   padding: 0 1rem;
   color: #888;
   font-size: 1.2rem;
@@ -431,6 +431,7 @@ footer {
     font-size: 1.5vw;
   }
   .scroll-section .description {
+    padding: 0;
     font-size: 2rem;
   }
   .scroll-section .description strong {
@@ -454,11 +455,13 @@ footer {
   }
   .scroll-section .mid-message {
     font-size: 4vw;
+    padding: 0;
   }
   .scroll-section .mid-message strong {
     font-size: 4vw;
   }
-  .scroll-section .canvas-caption {
+  .scroll-section#scrollsection-3 .canvas-caption {
+    padding: 0;
     font-size: 2rem;
   }
 }
