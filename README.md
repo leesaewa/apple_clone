@@ -5,6 +5,9 @@
 - js: text animation, css수정
 - fixed nav
 - scroll video img 좀 더 부드럽게 만듦
+- loading animation -> svg
+- css 향상
+  - `will-change` : 남발 금지
 
 ## 220823
 

@@ -10,6 +10,63 @@
   box-sizing: border-box;
 }
 
+@keyframes loading-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-circle-ani {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+
+//
+// loading
+//
+.loading {
+  @include flexbox();
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+
+  .loading-circle {
+    width: 54px;
+    height: 54px;
+    animation: loading-spin 3s infinite;
+
+    circle {
+      stroke: #000;
+      stroke-width: 4;
+      // getTotalLength()로 stroke의 길이를 얻어올 수 있음
+      stroke-dasharray: 157;
+      stroke-dashoffset: -157;
+      fill: transparent;
+      animation: loading-circle-ani 1s infinite;
+    }
+  }
+}
+
+.before-load {
+  overflow: hidden;
+
+  .loading {
+    opacity: 1;
+  }
+}
+
 //
 //
 // header
@@ -217,6 +274,7 @@ header {
 #show-scene-2 #scrollsection-2 .sticky-elem,
 #show-scene-3 #scrollsection-3 .sticky-elem {
   display: block;
+  will-change: transform, opacity;
 }
 
 //

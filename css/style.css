@@ -156,6 +156,93 @@ a {
           box-sizing: border-box;
 }
 
+@-webkit-keyframes loading-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loading-circle-ani {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+
+@keyframes loading-circle-ani {
+  0% {
+    stroke-dashoffset: 157;
+  }
+  75% {
+    stroke-dashoffset: -147;
+  }
+  100% {
+    stroke-dashoffset: -157;
+  }
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.loading .loading-circle {
+  width: 54px;
+  height: 54px;
+  -webkit-animation: loading-spin 3s infinite;
+          animation: loading-spin 3s infinite;
+}
+
+.loading .loading-circle circle {
+  stroke: #000;
+  stroke-width: 4;
+  stroke-dasharray: 157;
+  stroke-dashoffset: -157;
+  fill: transparent;
+  -webkit-animation: loading-circle-ani 1s infinite;
+          animation: loading-circle-ani 1s infinite;
+}
+
+.before-load {
+  overflow: hidden;
+}
+
+.before-load .loading {
+  opacity: 1;
+}
+
 header .global-nav {
   position: absolute;
   left: 0;
@@ -406,6 +493,7 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
 #show-scene-2 #scrollsection-2 .sticky-elem,
 #show-scene-3 #scrollsection-3 .sticky-elem {
   display: block;
+  will-change: transform, opacity;
 }
 
 footer {
