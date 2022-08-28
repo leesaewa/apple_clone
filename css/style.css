@@ -497,6 +497,22 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
   font-size: 1.2rem;
 }
 
+.normal-content {
+  max-width: 1000px;
+}
+
+.normal-content .mid-message {
+  margin: 0 auto;
+  padding: 0 1rem 2em;
+  font-size: 2rem;
+  color: #888;
+  word-break: break-all;
+}
+
+.scroll-effect-end .sticky-elem {
+  display: none !important;
+}
+
 #show-scene-0 #scrollsection-0 .sticky-elem,
 #show-scene-1 #scrollsection-1 .sticky-elem,
 #show-scene-2 #scrollsection-2 .sticky-elem,

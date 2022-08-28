@@ -8,6 +8,7 @@
 - loading animation -> svg
 - css 향상
   - `will-change` : 남발 금지
+- 하단 추가 콘텐츠
 
 ## 220823
 
