@@ -236,6 +236,14 @@ header .local-nav .local-nav-inner .local-nav-links li:not(:last-child) {
   margin-right: 2rem;
 }
 
+.local-nav-sticky header .local-nav {
+  position: fixed;
+  top: 0;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: saturate(180%) blur(15px);
+          backdrop-filter: saturate(180%) blur(15px);
+}
+
 .scroll-section {
   position: relative;
   padding-top: 50vh;

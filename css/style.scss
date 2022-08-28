@@ -54,6 +54,20 @@ header {
 }
 
 //
+// fixed nav
+//
+.local-nav-sticky {
+  header {
+    .local-nav {
+      position: fixed;
+      top: 0;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: saturate(180%) blur(15px);
+    }
+  }
+}
+
+//
 // content
 //
 

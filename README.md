@@ -3,6 +3,7 @@
 ## 220828
 
 - js: text animation, css수정
+- fixed nav
 
 ## 220823
 
