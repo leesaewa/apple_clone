@@ -163,7 +163,6 @@
       sceneInfo[3].objs.images.push(imgElem3);
     }
   }
-  setCanvasImages();
 
   // menu
   function checkMenu() {
@@ -715,5 +714,14 @@
     sceneInfo[0].objs.context.drawImage(sceneInfo[0].objs.videoImages[0], 0, 0);
   });
   // DOMContentLoaded는 dom객체만 로드 끝나면 실행함. load는 이미지파일까지 로드 끝나면 실행
-  window.addEventListener("resize", setLayout);
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+      setLayout();
+    }
+    sceneInfo[3].values.rectStartY = 0;
+  });
+
+  window.addEventListener("orientationchange", setLayout);
+
+  setCanvasImages();
 })();
