@@ -62,9 +62,18 @@
 .before-load {
   overflow: hidden;
 
+  article {
+    display: none;
+  }
+
   .loading {
     opacity: 1;
   }
+}
+
+article {
+  // iphone 가로 스크롤 방지
+  overflow-x: hidden;
 }
 
 //
@@ -240,6 +249,7 @@ header {
     padding: 0 1rem 2em;
     font-size: 2rem;
     color: $grey;
+    word-break: break-all;
 
     strong {
       font-size: 2.2rem;
@@ -261,7 +271,7 @@ header {
 
     .canvas-caption {
       max-width: 1000px;
-      margin: -8em auto 0;
+      margin: -24rem auto 0;
       padding: 0 1rem;
       color: $grey;
       font-size: 1.2rem;
@@ -353,6 +363,7 @@ footer {
     }
     &#scrollsection-3 {
       .canvas-caption {
+        margin-top: -8rem;
         padding: 0;
         font-size: 2rem;
       }
