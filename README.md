@@ -1,4 +1,12 @@
 # apple clone
+- Apple 사이트 클론 코딩.
+- 인터랙티브 웹/애니메이션 효과
+
+
+# Preview
+<img src="https://user-images.githubusercontent.com/97646713/210236666-502a6616-6b9d-4a6a-a764-091d9210d4f3.jpg">
+
+# Log
 
 ## 220828
 
